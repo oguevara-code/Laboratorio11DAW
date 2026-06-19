@@ -24,6 +24,8 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
+from django.urls import path, include
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 
@@ -42,5 +44,9 @@ urlpatterns = [
     path(
         'api/saludo/',
         saludo
+    ),
+
+    path(
+        'api/', include('api.urls')
     ),
 ]
