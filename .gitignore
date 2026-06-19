@@ -1,0 +1,7 @@
+env/
+node_module/
+__pycache__/
+*.pyc
+db.sqlite3
+.angular/
+dist/
